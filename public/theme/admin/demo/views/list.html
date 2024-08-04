@@ -1,0 +1,19 @@
+<a href="#!/product/add">Thêm</a>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Chức năng</th>
+    </tr>
+    <tr ng-repeat="pr in products">
+        <td>{{pr.id}}</td>
+        <td>{{pr.name}}</td>
+        <td>{{pr.price}}</td>
+        <td>
+            <button ng-click="onDelete(pr.id)">Xóa</button>
+            <button ng-click="onEdit(pr.id)">Sửa</button>
+            <button ng-click="onDetail(pr.id)">Chi tiết</button>
+        </td>
+    </tr>
+</table>
